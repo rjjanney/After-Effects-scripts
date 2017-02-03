@@ -1,0 +1,1 @@
+﻿app.project.activeItem.layer(1).effect.addProperty("Pseudo/Endpages")

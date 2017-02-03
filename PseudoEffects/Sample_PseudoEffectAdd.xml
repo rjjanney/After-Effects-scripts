@@ -1,0 +1,11 @@
+	<Effect matchname="Pseudo/Randy Popup Control" name="$$$/AE/Preset/Randy=Randy">
+	  <Popup name="$$$/AE/Preset/Popup=Popup" popup_string="$$$/AE/Preset/Popup/Popup=Randy|Sean|Emily|Ely|Javier" default="2"/>
+		<Angle name="$$$/AE/Preset/angle=This Angle" default="839" CANNOT_TIME_VARY="true"/>
+		<Checkbox name="$$$/AE/Preset/checkbox=The Checkbox" default="false"/>
+		<Color name="$$$/AE/Preset/color=Our Color" default_red="30" default_green="94" default_blue="130"/>
+		<Group name="$$$/AE/Preset/group=Custom Group">
+			<Layer name="$$$/AE/Preset/layer=Dropdown" default_self="true"/>
+			<Point name="$$$/AE/Preset/point=Pointey" default_x=".5" default_y=".5"/>
+			<Slider name="$$$/AE/Preset/slider=Spider Slider" default="10" slider_min="-5" slider_max="92" valid_min="-2000" valid_max="4000" precision="2"/>
+		</Group>
+    </Effect>

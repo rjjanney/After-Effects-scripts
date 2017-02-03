@@ -1,0 +1,70 @@
+select = comp("_COMPARE").layer("01 Single Day").effect("End Pages")("daypart").value;
+
+
+switch(select) {
+
+	case 1:
+	x = "1118.4";
+	[x,transform.position[1]]
+	break;
+
+	case 2:
+	x = "1118.4";
+	[x,transform.position[1]]
+	break;
+
+	case 3:
+	x="1025.4";
+	[x,transform.position[1]];
+	break;
+
+	case 4:
+	x="1025.4";
+	[x,transform.position[1]];
+	break;
+
+	case 5:
+	x="1118.4";
+	[x,transform.position[1]];
+	break;
+
+	case 6:
+	x="1018.4";
+	[x,transform.position[1]];
+	break;
+	
+	case 7:
+	x="1118.4";
+	[x,transform.position[1]];
+	break;
+
+	case 8:
+	x="1098.4";
+	[x,transform.position[1]];
+	break;
+
+	case 9:
+	x="1118.4";
+	[x,transform.position[1]];
+	break;
+
+	case 10:
+	x="949.4";
+	[x,transform.position[1]];
+	break;
+
+	case 11:
+	x="1208.4";
+	[x,transform.position[1]];
+	break;
+
+	case 12:
+	[thisComp.width - thisComp.layer("Null_For_Text_Width").effect("Slider Control")("Slider") / 2, value[1]];
+	break;
+
+	default:
+	x="1118.4"
+	[x,transform.position[1]];
+
+}
+

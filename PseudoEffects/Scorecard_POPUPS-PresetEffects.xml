@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Effects[
+
+<!-- Inline DTD for After Effects effect definitions -->
+<!-- Current used only to define parameters for "pseudo" effects used for -->
+<!-- presets. -->
+	
+<!-- Definitions of objects in this file, for validating parsers and editors -->
+<!ELEMENT Effects (Effect)*>
+
+<!ELEMENT Effect (Group | Angle | Checkbox | Popup | Color |  Layer | Point | Slider)*>
+<!ATTLIST Effect
+	matchname	CDATA #REQUIRED
+	name		CDATA #REQUIRED
+	external_id	CDATA #IMPLIED
+>
+
+<!ELEMENT Group (Group | Angle | Checkbox | Popup | Color |  Layer | Point | Slider)*>
+<!ATTLIST Group
+	name				CDATA			#REQUIRED
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Angle EMPTY>
+<!ATTLIST Angle
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	default				CDATA			#REQUIRED
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Checkbox EMPTY>
+<!ATTLIST Checkbox
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	default				(true | false)	"false"
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Popup EMPTY>
+<!ATTLIST Popup
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	popup_string		CDATA			#REQUIRED
+	default				CDATA			#REQUIRED
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Color EMPTY>
+<!ATTLIST Color
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	default_red			CDATA			#REQUIRED
+	default_green		CDATA			#REQUIRED
+	default_blue		CDATA			#REQUIRED
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Layer EMPTY>
+<!ATTLIST Layer
+	name				CDATA			#REQUIRED
+	default_self		(true | false)	"true"
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Point EMPTY>
+<!ATTLIST Point
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	default_x			CDATA			"0.5"
+	default_y			CDATA			"0.5"
+	external_id			CDATA			#IMPLIED
+>
+
+<!ELEMENT Slider EMPTY>
+<!ATTLIST Slider
+	CANNOT_TIME_VARY	(true | false)	"false"
+	name				CDATA			#REQUIRED
+	default				CDATA			#REQUIRED
+	valid_min			CDATA			#REQUIRED
+	valid_max			CDATA			#REQUIRED
+	slider_min			CDATA			#IMPLIED				
+	slider_max			CDATA			#IMPLIED			
+	precision			CDATA			"1"
+	DISPLAY_PERCENT		(true | false)	"false"
+	DISPLAY_PIXEL		(true | false)	"false"
+	external_id			CDATA			#IMPLIED
+>
+]>
+
+
+<Effects>
+
+	<Effect matchname="Pseudo/Hole1" name="$$$/AE/Preset/Hole1=Hole 1">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole2" name="$$$/AE/Preset/Hole2=Hole 2">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole3" name="$$$/AE/Preset/Hole3=Hole 3">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole4" name="$$$/AE/Preset/Hole4=Hole 4">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole5" name="$$$/AE/Preset/Hole5=Hole 5">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole6" name="$$$/AE/Preset/Hole6=Hole 6">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole7" name="$$$/AE/Preset/Hole7=Hole 7">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole8" name="$$$/AE/Preset/Hole8=Hole 8">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole9" name="$$$/AE/Preset/Hole9=Hole 9">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole10" name="$$$/AE/Preset/Hole10=Hole 10">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole11" name="$$$/AE/Preset/Hole11=Hole 11">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole12" name="$$$/AE/Preset/Hole19=Hole 12">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole13" name="$$$/AE/Preset/Hole13=Hole 13">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole14" name="$$$/AE/Preset/Hole14=Hole 14">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole15" name="$$$/AE/Preset/Hole15=Hole 15">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole16" name="$$$/AE/Preset/Hole16=Hole 16">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole17" name="$$$/AE/Preset/Hole17=Hole 17">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+
+	<Effect matchname="Pseudo/Hole18" name="$$$/AE/Preset/Hole18=Hole 18">
+			<Popup name="$$$/AE/Preset/par=Par" popup_string="$$$/AE/Preset/Popup/Popup=3|4|5" default="2"/>
+			<Popup name="$$$/AE/Preset/score=Score" popup_string="$$$/AE/Preset/Popup/Popup=1|2|3|4|5|6|7|8|9|10|11|12|13|14" default="3"/>
+		<!--	<Slider name="$$$/AE/Preset/par=Par" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="5" precision="0"/>
+			<Slider name="$$$/AE/Preset/score=Score" DISPLAY_PERCENT="false" default="4" valid_min="1" valid_max="15" precision="0"/> -->
+	</Effect>
+	
+		<Effect matchname="Pseudo/Endpages" name="$$$/AE/Preset/Endpages=End Pages">
+		<Popup name="$$$/AE/Preset/CupLogo=Cup-Logo" popup_string="$$$/AE/Preset/Popup/Popup=FedExCup|Charles Schwab Cup| " default="3"/>
+		<Popup name="$$$/AE/Preset/month=Month" popup_string="$$$/AE/Preset/Popup/Popup=January|February|March|April|May|June|July|August|September|October|November|December|Custom| " default="14"/>
+		<Slider name="$$$/AE/Preset/Date=Date" DISPLAY_PERCENT="false" default="15" valid_min="1" valid_max="31" precision="0"/>
+	  <Group name="$$$/AE/Preset/Day1=Day 1">
+		  <Popup name="$$$/AE/Preset/day1=daypart" popup_string="$$$/AE/Preset/Popup/Popup=MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|TONIGHT|TODAY|TOMORROW|NEXT" default="8"/>
+		  
+		  <Slider name="$$$/AE/Preset/Hour1=Hour 1: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox1=Add 30-T1?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM1=AM-PM1" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+		  <Slider name="$$$/AE/Preset/Hour2=Hour 2: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox2=Add 30-T2?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM2=AM-PM2" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+		  <Popup name="$$$AE/Preset/NET1=Network1" popup_string="$$$/AE/Preset/Popup=GOLF|NBC|NBCPeacock|GOLF+NBC|GLE|Custom| " default="1"/>
+		  </Group>
+	  <Group name="$$$/AE/Preset/Day2=Day 2">
+		  <Popup name="$$$/AE/Preset/day2=daypart2" popup_string="$$$/AE/Preset/Popup/Popup=MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|TONIGHT|TODAY|TOMORROW|NEXT" default="8"/>
+		  <Slider name="$$$/AE/Preset/Hour3=Hour 3: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox3=Add 30-T3?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM3=AM-PM3" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+		  <Slider name="$$$/AE/Preset/Hour4=Hour 4: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox4=Add 30-T4?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM4=AM-PM4" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+	      <Popup name="$$$AE/Preset/NET2=Network 2" popup_string="$$$/AE/Preset/Popup=GOLF|NBC|NBCPeacock|GOLF+NBC|GLE|Custom| " default="1"/>
+	   </Group>
+	   <Group name="$$$/AE/Preset/Day3=Day 3">
+		  <Popup name="$$$/AE/Preset/day3=daypart3" popup_string="$$$/AE/Preset/Popup/Popup=MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY|TONIGHT|TODAY|TOMORROW|NEXT" default="8"/>
+		  <Slider name="$$$/AE/Preset/Hour5=Hour 5: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox5=Add 30-T5?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM5=AM-PM5" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+		  <Slider name="$$$/AE/Preset/Hour6=Hour 6: " DISPLAY_PERCENT="false" default="8" valid_min="1" valid_max="12" precision="0"/>
+		  <Checkbox name="$$$/AE/Preset/checkbox6=Add 30-T6?" default="false"/>
+		  <Popup name="$$$/AE/Preset/AMPM6=AM-PM6" popup_string="$$$/AE/Preset/Popup=AM|PM|NOON|MIDNIGHT| " default="1"/>
+	      <Popup name="$$$AE/Preset/Network3=Network 3" popup_string="$$$/AE/Preset/Popup=GOLF|NBC|NBCPeacock|GOLF+NBC|GLE|Custom| " default="1"/>
+	   </Group>
+    </Effect>
+	
+    <Effect matchname="ADBE Color Swirl" name="$$$/AE/Preset/ColorSwirl=Color Swirl">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" DISPLAY_PERCENT="true" default="0" valid_min="0" valid_max="100"/>
+		<Color name="$$$/AE/Preset/FinalColor=Final Color" default_red="20" default_green="192" default_blue="50"/>
+	</Effect>
+
+    <Effect matchname="ADBE Getting Jiggy" name="$$$/AE/Preset/GettingJiggy=Getting Jiggy">
+		<Slider name="$$$/AE/Preset/OhBoy1=Oh Boy 1" default="5" valid_min="-50" valid_max="50"/>
+		<Slider name="$$$/AE/Preset/OhBoy2=Oh Boy 2" default="5" valid_min="-50" valid_max="50" slider_min="2" slider_max="8"/>
+		<Slider name="$$$/AE/Preset/OhBoyPercent=Oh Boy Percent" DISPLAY_PERCENT="true" default="50" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/OhBoyPixel=Oh Boy Pixel" DISPLAY_PIXEL="true" default=".5" valid_min="0" valid_max="1"/>
+		<Layer name="$$$/AE/Preset/FollowLayer=Follow Layer"/>
+		<Color name="$$$/AE/Preset/Hopscotch=Hopscotch" default_red="128" default_green="64" default_blue="192"/>
+		<Point name="$$$/AE/Preset/CenterPoint=Center Point"/>
+		<Point name="$$$/AE/Preset/LeftEdgePoint=Left Edge Point" default_x="0.0" default_y="0.5"/>
+		<Group name="$$$/AE/Preset/Jig=Jig">
+			<Checkbox name="$$$/AE/Preset/EnableJig=Enable Jig" default="true"/>
+			<Angle name="$$$/AE/Preset/JigAngle=Jig Angle" default="10"/>
+		</Group>
+		<Group name="$$$/AE/Preset/FunkyChicken=Funky Chicken">
+			<Checkbox name="$$$/AE/Preset/EnableFunkyChicken=Enable Funky Chicken" default="false" CANNOT_TIME_VARY="false"/>
+			<Angle name="$$$/AE/Preset/FunkyChickenAngle=Funky Chicken Angle" default="20"/>
+		</Group>
+    </Effect>
+    
+	<Effect matchname="ADBE Separate XYZ Position" name="$$$/AE/Preset/SeparateXYZPosition=Separate XYZ Position">
+		<Slider name="$$$/AE/Preset/XPosition=X Position" default="0" valid_min="-30000" valid_max="30000" slider_min="-1000" slider_max="1000"/>
+		<Slider name="$$$/AE/Preset/YPosition=Y Position" default="0" valid_min="-30000" valid_max="30000" slider_min="-1000" slider_max="1000"/>
+		<Slider name="$$$/AE/Preset/ZPosition=Z Position" default="0" valid_min="-30000" valid_max="30000" slider_min="-1000" slider_max="1000"/>
+	</Effect>
+	
+	
+	<Effect matchname="ADBE CM InsetVideoFramed" name="$$$/AE/Preset/InsetVideoframed=Inset Video - framed">
+		<Slider name="$$$/AE/Preset/CropAmount=Crop Amount" default="5" valid_min="0" valid_max="50" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/FrameSize=Frame Size" default="8" valid_min="0" valid_max="100" slider_min="0" slider_max="30"/>
+		<Color name="$$$/AE/Preset/FrameColor=Frame Color" default_red="229" default_green="229" default_blue="229"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM InsetVideoTorn" name="$$$/AE/Preset/InsetVideotornedges=Inset Video - torn edges">
+		<Slider name="$$$/AE/Preset/CropAmount=Crop Amount" default="5" valid_min="0" valid_max="50" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM MoodLightAmorph" name="$$$/AE/Preset/MoodLightingamorphous=Mood Lighting - amorphous">
+		<Slider name="$$$/AE/Preset/EvolutionSpeed=Evolution Speed" default="150" valid_min="-1000" valid_max="1000" slider_min="-500" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/CloudSize=Cloud Size" default="75" valid_min="1" valid_max="5000" slider_min="10" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/Intensity=Intensity" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM MoodLightDigital" name="$$$/AE/Preset/MoodLightingdigital=Mood Lighting - digital">
+		<Slider name="$$$/AE/Preset/EvolutionSpeed=Evolution Speed" default="100" valid_min="-1000" valid_max="1000" slider_min="-500" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/BlockSize=Block Size" default="250" valid_min="1" valid_max="5000" slider_min="20" slider_max="1000"/>
+		<Slider name="$$$/AE/Preset/Intensity=Intensity" default="75" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM MoodLightStreaks" name="$$$/AE/Preset/MoodLightingstreaks=Mood Lighting - streaks">
+		<Slider name="$$$/AE/Preset/EvolutionSpeed=Evolution Speed" default="200" valid_min="-1000" valid_max="1000" slider_min="-500" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/StreakWidth=Streak Width" default="75" valid_min="1" valid_max="1000" slider_min="10" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/Intensity=Intensity" default="75" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM CrackedTiles" name="$$$/AE/Preset/CrackedTiles=Cracked Tiles">
+		<Slider name="$$$/AE/Preset/TileCracking=Tile Cracking" default="33" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/TilesAcross=Tiles Across" default="50" valid_min="2" valid_max="2000" slider_min="2" slider_max="200"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM LightLeaksMarkers" name="$$$/AE/Preset/LightLeakslayermarkers=Light Leaks - layer markers">
+		<Slider name="$$$/AE/Preset/FlashWidthmsec=Flash Width (msec)" default="200" valid_min="1" valid_max="10000" slider_min="1" slider_max="1000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM LightLeaksRandom" name="$$$/AE/Preset/LightLeaksrandom=Light Leaks - random">
+		<Slider name="$$$/AE/Preset/ChanceofFlashing=Chance of Flashing" default="100" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/FlashNervousness=Flash Nervousness" default="50" valid_min="1" valid_max="10000" slider_min="1" slider_max="500"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM OpacityFlashMarkers" name="$$$/AE/Preset/OpacityFlashlayermarkers=Opacity Flash - layer markers">
+		<Slider name="$$$/AE/Preset/FlashWidthmsec=Flash Width (msec)" default="500" valid_min="1" valid_max="10000" slider_min="1" slider_max="2000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM OpacityFlashRandom" name="$$$/AE/Preset/OpacityFlashrandom=Opacity Flash - random">
+		<Slider name="$$$/AE/Preset/ChanceofFlashing=Chance of Flashing" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/FlashNervousness=Flash Nervousness" default="50" valid_min="1" valid_max="10000" slider_min="1" slider_max="500"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM CropEdges" name="$$$/AE/Preset/CropEdges=Crop Edges">
+		<Slider name="$$$/AE/Preset/CropAmountperedge=Crop Amount (per edge)" default="5" valid_min="0" valid_max="50" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM AutoscrollHorizontal" name="$$$/AE/Preset/Autoscrollhorizontal=Autoscroll - horizontal">
+		<Slider name="$$$/AE/Preset/Speedpixelssecond=Speed (pixels/second)" default="100" valid_min="-10000" valid_max="10000" slider_min="-1000" slider_max="1000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM AutoscrollVertical" name="$$$/AE/Preset/Autoscrollvertical=Autoscroll - vertical">
+		<Slider name="$$$/AE/Preset/Speedpixelssecond=Speed (pixels/second)" default="-25" valid_min="-10000" valid_max="10000" slider_min="-1000" slider_max="1000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Throw" name="$$$/AE/Preset/DriftOverTime=Drift Over Time">
+		<Angle name="$$$/AE/Preset/Direction=Direction" default="135"/>
+		<Slider name="$$$/AE/Preset/Speedpixelssecond=Speed (pixels/second)" default="50" valid_min="-10000" valid_max="10000" slider_min="-1000" slider_max="1000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM FadeInOutFrames" name="$$$/AE/Preset/FadeInOutframes=Fade In+Out - frames">
+		<Slider name="$$$/AE/Preset/FadeInDurationframes=Fade In Duration (frames)" default="15" valid_min="0" valid_max="1000"/>
+		<Slider name="$$$/AE/Preset/FadeOutDurationframes=Fade Out Duration (frames)" default="15" valid_min="0" valid_max="1000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM FadeInOutmsec" name="$$$/AE/Preset/FadeInOutmsec=Fade In+Out - msec">
+		<Slider name="$$$/AE/Preset/FadeInDurationmsec=Fade In Duration (msec)" default="500" valid_min="0" valid_max="30000" slider_min="0" slider_max="10000"/>
+		<Slider name="$$$/AE/Preset/FadeOutDurationmsec=Fade Out Duration (msec)" default="500" valid_min="0" valid_max="30000" slider_min="0" slider_max="10000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Spin" name="$$$/AE/Preset/RotateOverTime=Rotate Over Time">
+		<Angle name="$$$/AE/Preset/Rotationdegreessecond=Rotation (degrees/second)" default="10"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM ScaleBounceMarkers" name="$$$/AE/Preset/ScaleBouncelayermarkers=Scale Bounce - layer markers">
+		<Slider name="$$$/AE/Preset/BounceDurationmsec=Bounce Duration (msec)" default="500" valid_min="1" valid_max="10000" slider_min="1" slider_max="2000"/>
+		<Slider name="$$$/AE/Preset/TargetScaleChange=Target Scale Change" default="200" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM ScaleBounceRandom" name="$$$/AE/Preset/ScaleBouncerandom=Scale Bounce - random">
+		<Slider name="$$$/AE/Preset/ChanceofBouncing=Chance of Bouncing" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/BounceNervousness=Bounce Nervousness" default="50" valid_min="1" valid_max="10000" slider_min="1" slider_max="500"/>
+		<Slider name="$$$/AE/Preset/TargetScaleChange=Target Scale Change" default="200" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM WiggleGelatin" name="$$$/AE/Preset/Wigglegelatin=Wiggle - gelatin">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/WiggleAmount=Wiggle Amount" default="20" valid_min="0" valid_max="70"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM WigglePosition" name="$$$/AE/Preset/Wiggleposition=Wiggle - position">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/WiggleAmountpixels=Wiggle Amount (pixels)" default="50" valid_min="0" valid_max="10000" slider_min="0" slider_max="500"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM WiggleRotation" name="$$$/AE/Preset/Wigglerotation=Wiggle - rotation">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Angle name="$$$/AE/Preset/WiggleAmountdegrees=Wiggle Amount (degrees)" default="30"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM WiggleScale" name="$$$/AE/Preset/Wigglescale=Wiggle - scale">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/WiggleAmount=Wiggle Amount" default="10" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/WiggleWidthSeparately=Wiggle Width Separately?"/>
+		<Slider name="$$$/AE/Preset/WiggleWidth=Wiggle Width" default="10" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM WiggleShear" name="$$$/AE/Preset/Wiggleshear=Wiggle - shear">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/WiggleAmount=Wiggle Amount" default="20" valid_min="0" valid_max="70"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Wigglerama" name="$$$/AE/Preset/Wigglerama=Wigglerama">
+		<Slider name="$$$/AE/Preset/WiggleSpeedwigssec=Wiggle Speed (wigs/sec)" default="1" valid_min="0" valid_max="100"/>
+		<Slider name="$$$/AE/Preset/WiggleNervousness=Wiggle Nervousness" default="1" valid_min="1" valid_max="20"/>
+		<Slider name="$$$/AE/Preset/WigglePositionpixels=Wiggle Position (pixels)" default="25" valid_min="0" valid_max="10000" slider_min="0" slider_max="500"/>
+		<Angle name="$$$/AE/Preset/WiggleRotationdegrees=Wiggle Rotation (degrees)" default="30"/>
+		<Slider name="$$$/AE/Preset/WiggleScale=Wiggle Scale" default="15" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/WiggleWidthSeparately=Wiggle Width Separately?"/>
+		<Slider name="$$$/AE/Preset/WiggleWidth=Wiggle Width" default="10" valid_min="0" valid_max="10000" slider_min="0" slider_max="1000" DISPLAY_PERCENT="true"/>
+
+	</Effect>
+
+	<Effect matchname="ADBE CM DissolveUnmelt" name="$$$/AE/Preset/Dissolveunmelt=Dissolve - unmelt">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/MaximumDistortion=Maximum Distortion" default="100" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="5000"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Zoom2DSpin" name="$$$/AE/Preset/Zoom2Dspin=Zoom - 2D spin">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Angle name="$$$/AE/Preset/SpinAmount=Spin Amount" default="180"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Zoom3DTumble" name="$$$/AE/Preset/Zoom3Dtumble=Zoom - 3D tumble">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Angle name="$$$/AE/Preset/Xtumble=X tumble" default="60"/>
+		<Angle name="$$$/AE/Preset/Ytumble=Y tumble" default="360"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM ZoomWobble" name="$$$/AE/Preset/Zoomwobble=Zoom - wobble">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Angle name="$$$/AE/Preset/WobbleAmount=Wobble Amount" default="60"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM ZoomBubble" name="$$$/AE/Preset/Zoombubble=Zoom - bubble">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM ZoomSpiral" name="$$$/AE/Preset/Zoomspiral=Zoom - spiral">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/SpiralSizepixels=Spiral Size (pixels)" default="200" valid_min="0" valid_max="2000"/>
+		<Angle name="$$$/AE/Preset/SpiralStartAngledegrees=Spiral Start Angle (degrees)" default="-360"/>
+		<Angle name="$$$/AE/Preset/SpiralEndAngledegrees=Spiral End Angle (degrees)" default="0"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM SlideVariable" name="$$$/AE/Preset/Slidevariable=Slide - variable">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Angle name="$$$/AE/Preset/EntranceAngle=Entrance Angle" default="-70"/>
+		<Slider name="$$$/AE/Preset/InitialScale=Initial Scale" default="25" valid_min="0" valid_max="500" slider_min="0" slider_max="200" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM FlyToInset" name="$$$/AE/Preset/FlytoInset=Fly to Inset">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/TargetScale=Target Scale" default="33.3" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Point name="$$$/AE/Preset/TargetPosition=Target Position" default_x="0.733" default_y="0.267"/>
+		<Slider name="$$$/AE/Preset/FrameSize=Frame Size" default="8" valid_min="0" valid_max="100" slider_min="0" slider_max="30"/>
+		<Color name="$$$/AE/Preset/FrameColor=Frame Color" default_red="229" default_green="229" default_blue="229"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM CornerReveal" name="$$$/AE/Preset/CornerReveal=Corner Reveal">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/rightnotleft=right (not left)"/>
+		<Checkbox name="$$$/AE/Preset/bottomnottop=bottom (not top)"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM GridWipe" name="$$$/AE/Preset/GridWipe=Grid Wipe">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/CellSize=Cell Size" default="20" valid_min="1" valid_max="2000"/>
+		<Angle name="$$$/AE/Preset/GridAngle=Grid Angle" default="0"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransComplete" name="$$$/AE/Preset/TransitionMasterControl=Transition Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransStretch" name="$$$/AE/Preset/StretchMasterControl=Stretch Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransDissolve" name="$$$/AE/Preset/DissolveMasterControl=Dissolve Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransFade" name="$$$/AE/Preset/FadeMasterControl=Fade Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransFadeMask" name="$$$/AE/Preset/MaskFadeControls=Mask Fade Controls">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransWipe" name="$$$/AE/Preset/WipeMasterControl=Wipe Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransWipeFeath" name="$$$/AE/Preset/WipeMasterControls=Wipe Master Controls">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransCard" name="$$$/AE/Preset/CardWipeMasterControl=Card Wipe Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/reversedirection=reverse direction"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransSlide" name="$$$/AE/Preset/SlideMasterControl=Slide Master Control">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/reversedirection=reverse direction"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransCorner" name="$$$/AE/Preset/StretchMasterControlcorner=Stretch Master Control(corner)">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/theothercorner=...the other corner"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransDirection" name="$$$/AE/Preset/StretchMasterControledge=Stretch Master Control (edge)">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/theotherside=...the other side"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransIris" name="$$$/AE/Preset/IrisWipeMasterControls=Iris Wipe Master Controls">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/InvertAlpha=Invert Alpha"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM TransRadial" name="$$$/AE/Preset/RadialWipeMasterControls=Radial Wipe Master Controls">
+		<Slider name="$$$/AE/Preset/TransitionCompletion=Transition Completion" default="50" valid_min="0" valid_max="100" DISPLAY_PERCENT="true"/>
+		<Checkbox name="$$$/AE/Preset/theothercorner=...the other corner"/>
+		<Checkbox name="$$$/AE/Preset/counterclockwise=counterclockwise"/>
+		<Slider name="$$$/AE/Preset/Feather=Feather" default="0" valid_min="0" valid_max="1000" slider_min="0" slider_max="100"/>
+	</Effect>
+	
+	
+	
+	
+  <Effect matchname="ADBE DE Jiggle" name="$$$/AE/Preset/Jiggle=Jiggle">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Jiggle At Marker" name="$$$/AE/Preset/JiggleAtMarker=Jiggle At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Jiggle On Beat" name="$$$/AE/Preset/JiggleOnBeat=Jiggle On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Jiggle Random" name="$$$/AE/Preset/JiggleRandom=Jiggle Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.0" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pulse" name="$$$/AE/Preset/Pulse=Pulse">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="-100" valid_max="300" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="4" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0.01" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pulse At Marker" name="$$$/AE/Preset/PulseAtMarker=Pulse At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="-100" valid_max="300" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="4" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pulse On Beat" name="$$$/AE/Preset/PulseOnBeat=Pulse On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="-100" valid_max="300" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="4" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pulse Random" name="$$$/AE/Preset/PulseRandom=Pulse Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="50" valid_min="-100" valid_max="300" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="4" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.0" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Bounce" name="$$$/AE/Preset/Bounce=Bounce">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Bounce At Marker" name="$$$/AE/Preset/BounceAtMarker=Bounce At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Bounce On Beat" name="$$$/AE/Preset/BounceOnBeat=Bounce On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Bounce Random" name="$$$/AE/Preset/BounceRandom=Bounce Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.0" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Opacity Pulse" name="$$$/AE/Preset/OpacityPulse=Opacity Pulse">
+    <Slider name="$$$/AE/Preset/MinOpacity=Min Opacity" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxOpacity=Max Opacity" default="100" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/Attack=Attack" default="10" valid_min="0" valid_max="25"  slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="5" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0.01" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Opacity Pulse At Marker" name="$$$/AE/Preset/OpacityPulseAtMarker=Opacity Pulse At Marker">
+    <Slider name="$$$/AE/Preset/MinOpacity=Min Opacity" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxOpacity=Max Opacity" default="100" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/Attack=Attack" default="10" valid_min="0" valid_max="25"  slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="5" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Opacity Pulse On Beat" name="$$$/AE/Preset/OpacityPulseOnBeat=Opacity Pulse On Beat">
+    <Slider name="$$$/AE/Preset/MinOpacity=Min Opacity" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxOpacity=Max Opacity" default="100" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/Attack=Attack" default="10" valid_min="0" valid_max="25"  slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="5" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Opacity Pulse Random" name="$$$/AE/Preset/OpacityPulseRandom=Opacity Pulse Random">
+    <Slider name="$$$/AE/Preset/MinOpacity=Min Opacity" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxOpacity=Max Opacity" default="100" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/Attack=Attack" default="10" valid_min="0" valid_max="25"  slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="5" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.75" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Oscillate" name="$$$/AE/Preset/Oscillate=Oscillate">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="150" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="5" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Angle name="$$$/AE/Preset/Direction=Direction" default="0"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Oscillate At Marker" name="$$$/AE/Preset/OscillateAtMarker=Oscillate At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="150" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="5" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Angle name="$$$/AE/Preset/Direction=Direction" default="0"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Oscillate On Beat" name="$$$/AE/Preset/OscillateOnBeat=Oscillate On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="150" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="5" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Angle name="$$$/AE/Preset/Direction=Direction" default="0"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Oscillate Random" name="$$$/AE/Preset/OscillateRandom=Oscillate Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="150" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="5" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Checkbox name="$$$/AE/Preset/RandomDirection=Random Direction" default="true"/>
+    <Angle name="$$$/AE/Preset/Direction=Direction" default="0"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.75" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pendulum" name="$$$/AE/Preset/Pendulum=Pendulum">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="45" valid_min="-180" valid_max="180"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pendulum At Marker" name="$$$/AE/Preset/PendulumAtMarker=Pendulum At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="45" valid_min="-180" valid_max="180"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pendulum On Beat" name="$$$/AE/Preset/PendulumOnBeat=Pendulum On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="45" valid_min="-180" valid_max="180"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Pendulum Random" name="$$$/AE/Preset/PendulumRandom=Pendulum Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="45" valid_min="-180" valid_max="180"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="1" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.75" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Swarm" name="$$$/AE/Preset/Swarm=Swarm">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="100" valid_min="0" valid_max="1000" slider_max="500"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/Leader=Leader" default_self="false"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Follow" name="$$$/AE/Preset/Follow=Follow">
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0.1" valid_min="0" valid_max="100" slider_max="10" precision="2"/>
+    <Layer name="$$$/AE/Preset/Leader=Leader" default_self="false"/>
+    <Checkbox name="$$$/AE/Preset/Position=Position" default="true"/>
+    <Checkbox name="$$$/AE/Preset/Rotation=Rotation" default="true"/>
+    <Checkbox name="$$$/AE/Preset/Scale=Scale" default="true"/>
+    <Checkbox name="$$$/AE/Preset/Opacity=Opacity" default="true"/>
+    <Checkbox name="$$$/AE/Preset/BasedOnIndex=Based On Index" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Orbit" name="$$$/AE/Preset/Orbit=Orbit">
+    <Slider name="$$$/AE/Preset/Radius=Radius" default="150" valid_min="0" valid_max="3000" slider_max="500"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="0.5" valid_min="-30" valid_max="30"  slider_min="-15" slider_max="15" precision="2"/>
+    <Angle name="$$$/AE/Preset/StartingPhase=Starting Phase" default="0"/>
+    <Layer name="$$$/AE/Preset/LayerToOrbit=Layer To Orbit" default_self="false"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Orbit 3D" name="$$$/AE/Preset/Orbit3D=Orbit 3D">
+    <Slider name="$$$/AE/Preset/Radius=Radius" default="150" valid_min="0" valid_max="3000" slider_max="500"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="0.5" valid_min="-30" valid_max="30"  slider_min="-15" slider_max="15" precision="2"/>
+    <Angle name="$$$/AE/Preset/StartingPhase=Starting Phase" default="0"/>
+    <Layer name="$$$/AE/Preset/LayerToOrbit=Layer To Orbit" default_self="false"/>
+    <Angle name="$$$/AE/Preset/ZTilt=Z Tilt" default="0"/>
+    <Angle name="$$$/AE/Preset/XTilt=X Tilt" default="0"/>
+    <Slider name="$$$/AE/Preset/Elevation=Elevation" default="0" valid_min="-3000" valid_max="3000" slider_min="-500" slider_max="500"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Motion 1D" name="$$$/AE/Preset/RandomMotion1D=Random Motion 1D">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/Range=Range" default="300" valid_min="0" valid_max="3000" slider_max="1000"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+    <Checkbox name="$$$/AE/Preset/VerticalMotion=Vertical Motion" default="false"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Motion" name="$$$/AE/Preset/RandomMotion=Random Motion">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/HorizontalRange=Horizontal Range" default="300" valid_min="0" valid_max="3000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/VerticalRange=Vertical Range" default="220" valid_min="0" valid_max="3000" slider_max="1000"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Rotation" name="$$$/AE/Preset/RandomRotation=Random Rotation">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/MinRotation=Min Rotation" default="-360" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MaxRotation=Max Rotation" default="360" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Rotation 3D" name="$$$/AE/Preset/RandomRotation3D=Random Rotation 3D">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/MinXRotation=Min X Rotation" default="0" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MaxXRotation=Max X Rotation" default="0" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MinYRotation=Min Y Rotation" default="-360" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MaxYRotation=Max Y Rotation" default="360" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MinZRotation=Min Z Rotation" default="0" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Slider name="$$$/AE/Preset/MaxZRotation=Max Z Rotation" default="0" valid_min="-3600" valid_max="3600" slider_min="-1000" slider_max="1000"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Opacity" name="$$$/AE/Preset/RandomOpacity=Random Opacity">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/MinOpacity=Min Opacity" default="10" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxOpacity=Max Opacity" default="100" valid_min="0" valid_max="100"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Scale" name="$$$/AE/Preset/RandomScale=Random Scale">
+    <Slider name="$$$/AE/Preset/TravelTime=Travel Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TravelTimeVariation=Travel Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Slider name="$$$/AE/Preset/MinScale=Min Scale" default="25" valid_min="0" valid_max="1000" slider_max="500"/>
+    <Slider name="$$$/AE/Preset/MaxScale=Max Scale" default="100" valid_min="0" valid_max="1000" slider_max="500"/>
+    <Checkbox name="$$$/AE/Preset/LockXAndY=Lock X And Y" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Random Fill Color" name="$$$/AE/Preset/RandomFillColor=Random Fill Color">
+    <Slider name="$$$/AE/Preset/TransitionTime=Transition Time" default="1" valid_min=".1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/TransitionTimeVariation=Transition Time Variation" default="0.5" valid_min="0" valid_max="100" slider_max="5"/>
+    <Color name="$$$/AE/Preset/BaseColor=Base Color" default_red="96" default_green="192" default_blue="160"/>
+    <Slider name="$$$/AE/Preset/MaxHueVariation=Max Hue Variation" default="60" valid_min="0" valid_max="180"/>
+    <Slider name="$$$/AE/Preset/MaxSaturationVariation=Max Saturation Variation" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/MaxLightnessVariation=Max Lightness Variation" default="0" valid_min="0" valid_max="100"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartTime=Random Start Time" default="true"/>
+    <Checkbox name="$$$/AE/Preset/RandomStartValue=Random Start Value" default="true"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Z Spring" name="$$$/AE/Preset/ZSpring=Z Spring">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="-500" valid_min="-1000" valid_max="1000"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WanderAmount=Wander Amount" default="50" valid_min="0" valid_max="500"/>
+    <Slider name="$$$/AE/Preset/RotationalAmplitude=Rotational Amplitude" default="50" valid_min="-360" valid_max="360"/>
+    <Slider name="$$$/AE/Preset/RotationalFrequency=Rotational Frequency" default="1.5" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Z Spring At Marker" name="$$$/AE/Preset/ZSpringAtMarker=Z Spring At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="-500" valid_min="-1000" valid_max="1000"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="3" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default="3" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WanderAmount=Wander Amount" default="50" valid_min="0" valid_max="500"/>
+    <Slider name="$$$/AE/Preset/RotationalAmplitude=Rotational Amplitude" default="50" valid_min="-360" valid_max="360"/>
+    <Slider name="$$$/AE/Preset/RotationalFrequency=Rotational Frequency" default="1.5" valid_min="0" valid_max="30" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Wobble Bounce" name="$$$/AE/Preset/WobbleBounce=Wobble Bounce">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleAmplitude=Wobble Amplitude" default="35" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/WobbleFrequency=Wobble Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleDecay=Wobble Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Delay=Delay" default="0" valid_min="0" valid_max="100"/>
+    <Slider name="$$$/AE/Preset/CycleTime=Cycle Time" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Wobble Bounce At Marker" name="$$$/AE/Preset/WobbleBounceAtMarker=Wobble Bounce At Marker">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleAmplitude=Wobble Amplitude" default="35" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/WobbleFrequency=Wobble Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleDecay=Wobble Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Wobble Bounce On Beat" name="$$$/AE/Preset/WobbleBounceOnBeat=Wobble Bounce On Beat">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleAmplitude=Wobble Amplitude" default="35" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/WobbleFrequency=Wobble Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleDecay=Wobble Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Layer name="$$$/AE/Preset/AudioKeyframeLayer=Audio Keyframe Layer" default_self="false"/>
+    <Slider name="$$$/AE/Preset/AudioThreshold=Audio Threshold" default="15" valid_min="0" valid_max="100"/>
+  </Effect>
+
+  <Effect matchname="ADBE DE Wobble Bounce Random" name="$$$/AE/Preset/WobbleBounceRandom=Wobble Bounce Random">
+    <Slider name="$$$/AE/Preset/Amplitude=Amplitude" default="250" valid_min="-1000" valid_max="1000" slider_min="0"/>
+    <Slider name="$$$/AE/Preset/Frequency=Frequency" default="1" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/Decay=Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleAmplitude=Wobble Amplitude" default="35" valid_min="0" valid_max="100" slider_max="100"/>
+    <Slider name="$$$/AE/Preset/WobbleFrequency=Wobble Frequency" default="4" valid_min="0" valid_max="30" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/WobbleDecay=Wobble Decay" default=".7" valid_min="0" valid_max="25" slider_max="15"/>
+    <Slider name="$$$/AE/Preset/MinDelay=Min Delay" default="0.75" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/MaxDelay=Max Delay" default="1.5" valid_min="0.1" valid_max="100" slider_max="10"/>
+    <Slider name="$$$/AE/Preset/InternalUseOnly=Internal Use Only" default="0" valid_min="0" valid_max="100"/>
+  </Effect>
+  
+	<Effect matchname="ADBE CM Animated Shape Control" name="$$$/AE/Preset/AnimatedShapeControl=Animated Shape Control">
+		<Slider name="$$$/AE/Preset/Speed=Speed" default="10" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="100"/>
+		<Point name="$$$/AE/Preset/Dimensions=Dimensions" default_x="0.5" default_y="0.5"/>
+		<Slider name="$$$/AE/Preset/Rounding=Rounding" default="0" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="100"/>
+		<Slider name="$$$/AE/Preset/Spread=Spread" default="10" valid_min="0" valid_max="10000" slider_min="0" slider_max="100"/>
+		<Angle name="$$$/AE/Preset/RandomSeed=Random Seed" default="0"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Animated Shape 2" name="$$$/AE/Preset/ChaserControl=Chaser Control">
+		<Slider name="$$$/AE/Preset/BoxStepSpeed=Box Step Speed" default="10" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="100"/>
+		<Point name="$$$/AE/Preset/Size=Size" default_x="0.5" default_y="0.5"/>
+		<Slider name="$$$/AE/Preset/Spread=Spread" default="10" valid_min="1" valid_max="1000" slider_min="1" slider_max="100"/>
+		<Slider name="$$$/AE/Preset/Elements=Elements" default="0" valid_min="1" valid_max="100" precision="0"/>
+	</Effect>
+
+	<Effect matchname="ADBE CM Animated Shape 3" name="$$$/AE/Preset/AnimatedShapeControl=Animated Shape Control">
+		<Slider name="$$$/AE/Preset/Speed=Speed" default="10" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="100"/>
+		<Angle name="$$$/AE/Preset/RandomSeed=Random Seed" default="0"/>
+	</Effect>
+
+  <Effect matchname="ADBE CM Animated Shape 3" name="$$$/AE/Preset/AnimatedShapeControl=Animated Shape Control">
+    <Slider name="$$$/AE/Preset/Speed=Speed" default="10" valid_min="-10000" valid_max="10000" slider_min="0" slider_max="100"/>
+    <Angle name="$$$/AE/Preset/RandomSeed=Random Seed" default="0"/>
+  </Effect>
+
+  <Effect matchname="ADBE Sample Image" name="$$$/AE/Preset/SampleImage=Sample Image">
+    <Point name="$$$/AE/Preset/Center=Center" default_x="0.5" default_y="0.5"/>
+    <Slider name="$$$/AE/Preset/Radius=Radius" default=".5" valid_min="0.01" valid_max="10000" slider_min="0.01" slider_max="2048"/>
+    <Color name="$$$/AE/Preset/SampledColorOutput=Sampled Color Output" default_red="128" default_green="128" default_blue="128"/>
+  </Effect>
+
+  <Effect matchname="ADBE Stereo 3D Controls" name="$$$/AE/Preset/Stereo3DControls=Stereo 3D Controls">
+    <Group name="$$$/AE/Preset/CameraSeparation=Camera Separation">
+      <Popup name="$$$/AE/Preset/Configuration=Configuration" popup_string="$$$/AE/Preset/3DStereoCamConfig/Popup=Center|Hero Left|Hero Right" default="1"/>
+      <Slider name="$$$/AE/Preset/SceneDepth=Stereo Scene Depth" DISPLAY_PERCENT="true" default="3" valid_min="0.0" valid_max="100" slider_min="0.0" slider_max="100"/>
+    </Group>
+    <Group name="$$$/AE/Preset/ConvergenceOptions=Convergence Options">
+      <Checkbox name="$$$/AE/Preset/ConvergeCameras=Converge Cameras"/>
+      <Popup name="$$$/AE/Preset/ConvergeTo=Converge To" popup_string="$$$/AE/Preset/ConvergeFrom/Popup=Camera Position|Camera Point of Interest|Zoom Distance" default="2"/>
+      <Slider name="$$$/AE/Preset/ConvergenceZOffset=Convergence Z Offset" default="0.0" valid_min="-50000.00" valid_max="50000" slider_min="-1000" slider_max="1000"/>
+    </Group>
+  </Effect>
+</Effects>
