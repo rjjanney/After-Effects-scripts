@@ -1,0 +1,1 @@
+﻿// Open foldervar myFolder = Folder (app.project.file.path);// alert(app.project.file.path);myFolder.execute(); 
